@@ -31,6 +31,10 @@ button:hover {
     background-color: #ff5500e8;
 }
 
+section {
+    margin-top: 120px;
+}
+
 /* ------------------------
     navbar section style
 --------------------------- */
@@ -142,8 +146,44 @@ button:hover {
     padding: 16px;
 }
 
+/*------------------------------------
+    Our Popular Tour Section Style
+--------------------------------------*/
 
+.popular-tour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin: 0 20px;
+}
 
+.tour-text h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.tour-text p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.tour-text ul{
+    margin-left: 30px;
+    margin-bottom: 24px;
+}
+
+.tour-text ul li{
+    line-height: 30px;
+}
+
+.tour-img{
+    width: 50%;
+}
 
 
 
@@ -161,11 +201,14 @@ button:hover {
         height: auto;
     }
 
-    .banner-element form {
+    .banner-element form,
+    .popular-tour {
         flex-direction: column;
     }
 
-    .banner-element form input, select, button{
+    .banner-element form input,
+    select,
+    .find{
         width: 100%;
     }
 
@@ -176,6 +219,15 @@ button:hover {
     .banner-element .explore h1 {
         font-size: 22px;
         font-weight: 800;
+    }
+
+    .popular-tour .tour-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .tour-img img{
+        width: 100%;
     }
 }
 
