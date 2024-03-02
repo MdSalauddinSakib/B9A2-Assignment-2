@@ -10,6 +10,25 @@
 :root {
     --primary-color: #FF5400;
     --text-color: #424247;
+    --white-color: #fff;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    background: var(--primary-color);
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff5500e8;
 }
 
 /* ------------------------
@@ -37,7 +56,7 @@
 }
 
 .navbar .travel {
-    color: #FF5400;
+    color: var(--primary-color);
     font-family: Mulish;
     font-size: 36px;
     font-style: normal;
@@ -71,7 +90,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
-    
 }
 
 .banner-element {
@@ -84,22 +102,45 @@
 }
 
 .banner-element .explore h1 {
-    color: #FFF;
+    color: var(--white-color);
     font-size: 64px;
     font-weight: 800;
     line-height: normal;
+    margin-bottom: 30px;
 }
 
 .banner-element .explore p {
-    color: #FFF;
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    margin-bottom: 30px;
 }
 
+.banner-element form input {
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: var(--white-color);
+}
 
+.banner-element form select {
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: var(--white-color);
+    color: rgba(19, 19, 24, 0.50);
+}
 
-
+.banner-element form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+}
 
 
 
@@ -113,6 +154,28 @@
 @media screen and (max-width: 600px) {
     .navbar .menu {
         display: none;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-element form {
+        flex-direction: column;
+    }
+
+    .banner-element form input, select, button{
+        width: 100%;
+    }
+
+    .banner-element {
+        padding: 16px;
+    }
+
+    .banner-element .explore h1 {
+        font-size: 22px;
+        font-weight: 800;
     }
 }
 
