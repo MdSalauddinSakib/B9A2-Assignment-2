@@ -305,6 +305,56 @@ section {
     left: 50%;
 }
 
+/* ---------------------------------------------------
+    Optional Section (Simple Perfect Place) Style
+-----------------------------------------------------*/
+
+.simple-place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin: 0 30px;
+}
+
+.simple-place-text h2 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.simple-place-text ul {
+    margin-left: 30px;
+    margin-bottom: 24px;
+}
+
+.simple-place-text ul li {
+    line-height: 30px;
+}
+
+.simple-place-img {
+    position: relative;
+    display: block;
+}
+
+.simple-place-img-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: var(--white-color);
+    transform: translate(-50%, -50%);
+}
+
+.simple-place-img-text strong {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
 /* ------------------------------------------- 
     Extra Section (Travelers Review) Style
 ----------------------------------------------*/
@@ -364,7 +414,7 @@ section {
     color: #cbcbcb;
 }
 
-.fa-solid{
+.fa-solid {
     color: #FF5400;
 }
 
@@ -408,20 +458,20 @@ section {
     border: 0;
 }
 
-.newsletter-form button{
+.newsletter-form button {
     width: 100%;
 }
 
-.newsletter-img{
+.newsletter-img {
     position: relative;
 }
 
-.newsletter-img img{
+.newsletter-img img {
     display: block;
     width: 100%;
 }
 
-.news-letter-img-sticker p{
+.news-letter-img-sticker p {
     text-align: center;
     background: var(--primary-color);
     border-radius: 16px;
@@ -430,7 +480,7 @@ section {
     transform: rotate(-19.628deg);
 }
 
-.news-letter-img-sticker{
+.news-letter-img-sticker {
     position: absolute;
     margin-bottom: 2.7em;
     margin-right: 0.8em;
@@ -444,34 +494,37 @@ section {
     Footer Section Style
 --------------------------------*/
 
-footer{
+footer {
     background: rgba(19, 19, 24, 0.05);
     text-align: center;
     line-height: 26px;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.footer-icon{
+.footer-icon {
     display: flex;
     gap: 40px;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(19, 19, 24, 0.10);
-    margin-bottom: 20px;
 }
 
-.fa-brands{
+.fa-brands {
     font-size: 42px;
     margin-right: 0.5em;
     cursor: pointer;
     padding: 20px;
     color: #217cbb;
+}
+
+.copy-footer {
+    padding: 40px;
 }
 
 
@@ -497,8 +550,13 @@ footer{
 
     .banner-element form,
     .popular-tour,
-    .customer-review {
+    .customer-review,
+    .simple-place {
         flex-direction: column;
+    }
+
+    .simple-place-img img{
+        width: 100%;
     }
 
     .banner-element form input,
@@ -507,7 +565,7 @@ footer{
         width: 100%;
     }
 
-    .customer-review{
+    .customer-review {
         animation: none;
         align-items: center;
     }
@@ -558,6 +616,18 @@ footer{
         font-weight: 400;
         line-height: 26px;
         margin-bottom: 24px;
+    }
+
+    .footer-icon {
+        gap: 10px;
+    }
+
+    .fa-brands {
+        font-size: 34px;
+        margin-right: 0;
+        cursor: pointer;
+        padding: 10px;
+        color: #217cbb;
     }
 }
 
