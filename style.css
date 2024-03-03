@@ -305,6 +305,69 @@ section {
     left: 50%;
 }
 
+/* ------------------------------------------- 
+    Extra Section (Travelers Review) Style
+----------------------------------------------*/
+
+.customer-review {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: space-around;
+    animation: marquee 50s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.customer-review-card {
+    border: 1px solid #cbcbcb;
+    width: 280px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.customer-review-card:hover {
+    border: 1px solid #cbcbcb;
+    width: 280px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.customer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-img img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.quotation .fa-quote-right {
+    font-size: 40px;
+    color: #cbcbcb;
+}
+
+.fa-solid{
+    color: #FF5400;
+}
+
 /*------------------------------
     Newsletter Section Style
 --------------------------------*/
@@ -433,7 +496,8 @@ footer{
     }
 
     .banner-element form,
-    .popular-tour {
+    .popular-tour,
+    .customer-review {
         flex-direction: column;
     }
 
@@ -441,6 +505,11 @@ footer{
     select,
     .find {
         width: 100%;
+    }
+
+    .customer-review{
+        animation: none;
+        align-items: center;
     }
 
     .banner-element {
